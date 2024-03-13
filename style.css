@@ -7,29 +7,33 @@ body {
 }
 
 header {
-    height: 110px;
-}
-
-h1 {
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
-    font-family: Helvetica, sans-serif;
-}
-
-.grid img{
-    margin-top: 110px;
-}
-
-.images {
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    width: 50%;
-
-    float: inline-end;
-    
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-family: "poppins", sans-serif;
+    text-align: center;
+    height: 80px;
 }
+
+i {
+    margin-top: 25px;
+}
+
+.grid {
+    position: absolute;
+    left: 25px;
+    top: 80px;
+    bottom: 80px;
+}
+
+.pieces {
+    position: absolute;
+    right: 25px;
+    top: 80px;
+}
+
+/* =================================== GRID 1 =================================== */
 
 #grid1-1 {
     position: absolute;
@@ -49,6 +53,10 @@ h1 {
     top: 0px;
 }
 
+
+/* =================================== GRID 2 =================================== */
+
+
 #grid2-1 {
     position: absolute;
     left: 0px;
@@ -67,10 +75,14 @@ h1 {
     top: 200px;
 }
 
+
+/* =================================== GRID 3 =================================== */
+
 #grid3-1 {
     position: absolute;
     left: 0px;
     top: 400px;
+    padding-bottom: 25px;
 }
 
 #grid3-2 {
@@ -85,38 +97,63 @@ h1 {
     top: 400px;
 }
 
+
+/* =================================== IMAGES 1 =================================== */
+
 #img1-1-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 400px;
+    top: 400px;
 }
 
 #img1-2-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 200px;
+    top: 200px;
 }
 
 #img1-3-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 400px;
+    top: 0px;
 }
 
+/* =================================== IMAGES 2 =================================== */
+
 #img2-1-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 400px;
+    top: 200px;
 }
 
 #img2-2-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 200px;
+    top: 0px;
 }
 
 #img2-3-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 0px;
+    top: 400px;
 }
 
+/* =================================== IMAGES 3 =================================== */
+
 #img3-1-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 200px;
+    top: 400px;
 }
 
 #img3-2-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 0px;
+    top: 200px;
 }
 
 #img3-3-draggable {
-    transform: scale(0.3);
+    position: absolute;
+    right: 0px;
+    top: 0px;
 }
